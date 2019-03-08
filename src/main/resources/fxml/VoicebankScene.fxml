@@ -18,18 +18,24 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.utsusynth.utsu.controller.VoicebankController">
+<BorderPane xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.utsusynth.utsu.controller.VoicebankController">
    <bottom>
-      <HBox maxHeight="150.0" prefHeight="150.0" prefWidth="700.0" spacing="10.0" BorderPane.alignment="CENTER">
+      <HBox maxHeight="372.0" prefHeight="302.0" prefWidth="633.0" spacing="10.0" BorderPane.alignment="CENTER">
          <children>
-            <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="AS_NEEDED" minViewportHeight="150.0" minViewportWidth="400.0" vbarPolicy="NEVER" vmax="0.0" HBox.hgrow="ALWAYS">
-              <content>
-                <AnchorPane fx:id="anchorBottom" minHeight="150.0" />
-              </content>
-               <HBox.margin>
-                  <Insets right="10.0" />
-               </HBox.margin>
-            </ScrollPane>
+            <VBox prefHeight="292.0" prefWidth="652.0">
+               <children>
+                  <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="AS_NEEDED" maxHeight="-Infinity" minHeight="146.0" minViewportHeight="150.0" minViewportWidth="400.0" prefHeight="146.0" vbarPolicy="NEVER" vmax="0.0">
+                    <content>
+                      <AnchorPane fx:id="anchorBottom" maxHeight="-Infinity" minHeight="80.0" prefHeight="146.0" prefWidth="400.0" />
+                    </content>
+                  </ScrollPane>
+                  <ScrollPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="146.0" prefWidth="171.0">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="130.0" prefWidth="159.0" />
+                    </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
             <GridPane minWidth="120.0" prefHeight="150.0" prefWidth="120.0">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
