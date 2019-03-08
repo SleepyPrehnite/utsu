@@ -337,6 +337,8 @@ public class LyricConfigEditor {
 
         return wavData.isPresent() ? wavData.get().getLengthMs() : 0.0;
     }
+    //TODO: Make this method
+    private double createSpectrogramChart(LyricConfigData config) {return 0.0;}
 
     private void populateFrqValues(
             ObservableList<Data<Number, Number>> frqSamples,
