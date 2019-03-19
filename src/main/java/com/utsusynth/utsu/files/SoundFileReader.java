@@ -20,7 +20,7 @@ import com.utsusynth.utsu.common.exception.ErrorLogger;
  */
 public class SoundFileReader {
     private static final ErrorLogger errorLogger = ErrorLogger.getLogger();
-
+    //private double[] wavArray;
     public Optional<FrequencyData> loadFrqData(File frqFile) {
         if (!frqFile.canRead()) {
             System.out.println("Warning: frq file not found: " + frqFile.getAbsolutePath());
@@ -88,7 +88,7 @@ public class SoundFileReader {
                     input.getFormat().isBigEndian() ? ByteOrder.BIG_ENDIAN
                             : ByteOrder.LITTLE_ENDIAN);
             ShortBuffer shortBuffer = byteBuffer.asShortBuffer();
-
+            //this.wavArray = this.bytesToWavArray(bytes);
             int[] samples = new int[numFrames];
             for (int i = 0; i < numFrames; i++) {
                 for (int channel = 0; channel < input.getFormat().getChannels(); channel++) {
@@ -109,4 +109,17 @@ public class SoundFileReader {
             return Optional.absent();
         }
     }
+    
+//    public double[] bytesToWavArray(byte[] bytes){
+//    	ByteBuffer bb = ByteBuffer.wrap(bytes);
+//    	double[] doubles = new double[bytes.length / 8];
+//    	for(int i = 0; i < doubles.length; i++) {
+//    	    doubles[i] = bb.getDouble();
+//    	}
+//    	return doubles;
+//    }
+//    
+//    public double[] getWavArray(){
+//    	return this.wavArray;
+//    }
 }

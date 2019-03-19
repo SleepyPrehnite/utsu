@@ -73,6 +73,9 @@ public class VoicebankController implements EditorController, Localizable {
 
     @FXML // fx:id="anchorBottom"
     private AnchorPane anchorBottom; // Value injected by FXMLLoader
+    
+    @FXML // fx:id="spectrogramBottom"
+    private AnchorPane spectrogramBottom; // Value injected by FXMLLoader
 
     @FXML // fx:id="voicebankImage"
     private ImageView voicebankImage; // Value injected by FXMLLoader
@@ -144,6 +147,8 @@ public class VoicebankController implements EditorController, Localizable {
                 anchorBottom.getChildren().add(configEditor.createConfigEditor(lyricData));
                 anchorBottom.getChildren().add(configEditor.getControlElement());
                 anchorBottom.getChildren().add(configEditor.getChartElement());
+                spectrogramBottom.getChildren().add(configEditor.createSpectrogramChart(lyricData));
+                
                 bindLabelsAndControlBars(configEditor.getControlElement());
             }
 

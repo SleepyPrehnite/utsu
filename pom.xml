@@ -24,6 +24,13 @@
       <version>4.12</version>
       <scope>test</scope>
     </dependency>
+	<dependency>
+    <groupId>DatasVec</groupId>
+    <artifactId>datavec-data-audio-</artifactId>
+    <version>1.0.0</version>
+    <scope>system</scope>
+    <systemPath>C:/Users/Administrator/Downloads/DatasVec/datavec-data-audio-1.0.0-beta3.jar</systemPath>
+	</dependency>
     <dependency>
       <groupId>com.google.inject</groupId>
       <artifactId>guice</artifactId>

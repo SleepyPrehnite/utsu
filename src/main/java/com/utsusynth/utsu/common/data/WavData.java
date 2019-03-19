@@ -4,7 +4,7 @@ package com.utsusynth.utsu.common.data;
 public class WavData {
     private final double lengthMs;
     private final int[] samples;
-
+    
     public WavData(double lengthMs, int[] samples) {
         this.lengthMs = lengthMs;
         this.samples = samples;
@@ -17,4 +17,5 @@ public class WavData {
     public int[] getSamples() {
         return samples;
     }
+    
 }

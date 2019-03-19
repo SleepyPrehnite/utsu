@@ -29,9 +29,9 @@
                       <AnchorPane fx:id="anchorBottom" maxHeight="-Infinity" minHeight="80.0" prefHeight="146.0" prefWidth="400.0" />
                     </content>
                   </ScrollPane>
-                  <ScrollPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="146.0" prefWidth="171.0">
+                  <ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="-Infinity" minHeight="146.0" minViewportHeight="150.0" minViewportWidth="400.0" prefHeight="146.0">
                     <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="130.0" prefWidth="159.0" />
+                      <AnchorPane fx:id="spectrogramBottom" maxHeight="-Infinity" minHeight="100.0" prefHeight="146.0" prefWidth="400.0" />
                     </content>
                   </ScrollPane>
                </children>
